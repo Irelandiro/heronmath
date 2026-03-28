@@ -1,7 +1,7 @@
 /* =============================================
    HERON MATH — STYLESHEET
    Fonts: Raleway (headings) + Lora (body/italic)
-   Theme: Deep navy + warm gold + dark teal
+   Theme: Deep navy + orange brand + dark teal
 ============================================= */
 
 /* --- VARIABLES --- */
@@ -9,8 +9,8 @@
   --navy:       #0d1b2a;
   --navy-mid:   #132336;
   --navy-light: #1e3a52;
-  --gold:       #c8a96e;
-  --gold-light: #e2c99a;
+  --gold:       #ff7a00;
+  --gold-light: #ff9d3f;
   --teal:       #4a9b8e;
   --teal-light: #7ec8b8;
   --white:      #f5f0e8;
