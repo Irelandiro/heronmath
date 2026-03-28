@@ -11,7 +11,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
     <a href="index.html" class="nav-logo">Heron</a>
     <ul class="nav-links">
@@ -24,17 +23,16 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Heron of Alexandria · 10 AD</p>
-      <h1 class="hero-title">Math,<br><em>made tangible.</em></h1>
+      <h1>Math,<br><em>made tangible.</em></h1>
       <p class="hero-sub">Drag equations. Spin the unit circle. Move the decimal point. Finally, a math tool that lets you <em>play</em>.</p>
       <div class="download-buttons">
         <a href="#" class="btn btn-store" aria-label="Download on the App Store">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           <span><small>Download on the</small>App Store</span>
         </a>
-        <a href="#" class="btn btn-store btn-android btn-coming-soon" aria-label="Coming soon on Google Play" style="cursor: default; opacity: 0.6;" onclick="return false;">
+        <a href="#" class="btn btn-store btn-android" aria-label="Coming soon on Google Play" style="cursor:default;opacity:0.55;" onclick="return false;">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.34.19.72.24 1.09.14l.06-.04 10.65-6.15-2.33-2.33-9.47 8.38zm-1.12-20.9C2.03 3.1 2 3.36 2 3.64v16.72c0 .28.03.54.06.8l9.64-9.64-9.64-9.66zm18.4 8.34-2.94-1.7-2.62 2.62 2.62 2.62 2.97-1.71c.84-.49.84-1.34-.03-1.83zm-16.3 10.2l.06.04c.37.1.75.05 1.09-.14l.03-.02 9.47-8.38-2.33-2.33-8.32 10.84z"/></svg>
           <span><small>Coming soon on</small>Google Play</span>
         </a>
@@ -52,13 +50,13 @@
           </div>
           <div class="mock-circle-container">
             <svg class="mock-circle" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="45" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
               <line x1="60" y1="60" x2="97" y2="33" stroke="#ff7a00" stroke-width="1.5"/>
               <line x1="97" y1="33" x2="97" y2="60" stroke="#7ec8a9" stroke-width="1.5" stroke-dasharray="3,2"/>
               <line x1="60" y1="33" x2="97" y2="33" stroke="#ff9d3f" stroke-width="1.5" stroke-dasharray="3,2"/>
               <circle cx="97" cy="33" r="3.5" fill="#ff7a00"/>
-              <text x="63" y="52" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Raleway">sin</text>
-              <text x="78" y="72" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Raleway">cos</text>
+              <text x="63" y="52" fill="rgba(255,255,255,0.45)" font-size="7" font-family="Raleway">sin</text>
+              <text x="78" y="72" fill="rgba(255,255,255,0.45)" font-size="7" font-family="Raleway">cos</text>
             </svg>
           </div>
         </div>
@@ -90,20 +88,26 @@
     </div>
   </section>
 
-  <!-- ABOUT HERON TEASER -->
+  <!-- HERON TEASER -->
   <section class="heron-teaser">
-    <div class="container heron-teaser-inner">
+    <div class="heron-teaser-inner">
       <div class="heron-quote">
         <p>"Where there is matter, there is geometry."</p>
         <span>— Johannes Kepler, echoing the spirit of Heron</span>
       </div>
       <div class="heron-text">
         <h2>Named for a legend.</h2>
-        <p>Heron of Alexandria — mathematician, engineer, inventor — believed in making abstract ideas <em>physical</em>. He built the first steam engine, the first vending machine, and wrote some of the earliest algorithms known to history. We named our app after him for a reason.</p>
+        <p>Heron of Alexandria — mathematician, engineer, inventor — believed in making abstract ideas <em>physical</em>. He built the first steam engine, the first vending machine, and wrote some of the earliest algorithms known to history.</p>
         <a href="about.html" class="text-link">Read more about Heron →</a>
       </div>
     </div>
   </section>
+
+  <!-- DONATE BANNER -->
+  <div class="donate-banner">
+    <p>Heron is free, and always will be. If it's helped you, a small donation keeps the lights on. ☕</p>
+    <a href="https://buymeacoffee.com/heronmaths" target="_blank" class="btn-donate">Buy me a coffee</a>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -115,7 +119,7 @@
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="/cdn-cgi/l/email-protection#19717c6b767774786d7175787b597e74787075377a7674">Contact</a>
+        <a href="mailto:heronmathlab@gmail.com">Contact</a>
       </div>
       <div class="footer-social">
         <a href="https://www.linkedin.com/company/heronmath" target="_blank" aria-label="LinkedIn">
@@ -124,13 +128,13 @@
         <a href="https://www.instagram.com/heronmathlab" target="_blank" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
         </a>
-        <a href="/cdn-cgi/l/email-protection#315954435e5f5c5045595d505371565c50585d1f525e5c" aria-label="Email">
+        <a href="mailto:heronmathlab@gmail.com" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Heron Math. All rights reserved.</p>
+      <p>© 2026 Heron Math. Made by one person who cares about math education.</p>
     </div>
   </footer>
 
