@@ -237,3 +237,41 @@ a:hover { color: var(--orange-dark); }
   .page-hero { padding: 6.5rem 1.4rem 2.5rem; }
   .donate-banner { padding: 1.8rem 1.4rem; }
 }
+
+/* ---- SCREENSHOT STACK ---- */
+.screenshot-stack {
+  position: relative;
+  width: 260px;
+  height: 480px;
+}
+
+.screenshot {
+  position: absolute;
+  width: 220px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(28,17,8,0.15);
+  border: 1px solid rgba(28,17,8,0.08);
+}
+
+.screenshot-back {
+  top: 0px;
+  left: 40px;
+  transform: rotate(4deg);
+  z-index: 1;
+  opacity: 0.75;
+}
+
+.screenshot-mid {
+  top: 60px;
+  left: 10px;
+  transform: rotate(-3deg);
+  z-index: 2;
+  opacity: 0.88;
+}
+
+.screenshot-front {
+  top: 30px;
+  left: 25px;
+  transform: rotate(1deg);
+  z-index: 3;
+}
