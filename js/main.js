@@ -1,4 +1,4 @@
-// Heron Math — main.js
+// Monty Math — main.js
 
 // Mobile nav toggle
 const toggle = document.querySelector('.nav-toggle');
@@ -21,8 +21,8 @@ if (toggle && navLinks) {
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 40) {
-    nav.style.borderBottomColor = 'rgba(200,169,110,0.15)';
+    nav.style.borderBottomColor = 'rgba(139,114,214,0.25)';
   } else {
-    nav.style.borderBottomColor = 'rgba(245,240,232,0.15)';
+    nav.style.borderBottomColor = 'rgba(43,33,56,0.10)';
   }
 });
