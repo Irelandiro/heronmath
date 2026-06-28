@@ -39,3 +39,21 @@ if (fullscreenBtn && gameFrame) {
     }
   });
 }
+
+// Make the embedded Unity build fill its frame, no matter how it was rebuilt.
+// The iframe is same-origin, so we inject sizing CSS into it on load — this
+// overrides Unity's fixed-pixel canvas so we never have to hand-edit the build.
+const gameIframe = document.querySelector('#game-frame');
+if (gameIframe) {
+  gameIframe.addEventListener('load', () => {
+    try {
+      const doc = gameIframe.contentDocument;
+      if (!doc) return;
+      const style = doc.createElement('style');
+      style.textContent =
+        'html,body{height:100%;margin:0}' +
+        '#unity-canvas{width:100%!important;height:100%!important;display:block}';
+      doc.head.appendChild(style);
+    } catch (e) { /* different origin — ignore */ }
+  });
+}
