@@ -26,3 +26,16 @@ window.addEventListener('scroll', () => {
     nav.style.borderBottomColor = 'rgba(43,33,56,0.10)';
   }
 });
+
+// Fullscreen toggle for the web app (play page only)
+const fullscreenBtn = document.querySelector('#fullscreen-btn');
+const gameFrame = document.querySelector('.game-frame');
+if (fullscreenBtn && gameFrame) {
+  fullscreenBtn.addEventListener('click', () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else if (gameFrame.requestFullscreen) {
+      gameFrame.requestFullscreen();
+    }
+  });
+}

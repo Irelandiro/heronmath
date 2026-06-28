@@ -282,6 +282,28 @@ a:hover { color: var(--orange-dark); }
 }
 .video-wrapper iframe { width: 100%; height: 100%; display: block; }
 
+/* ---- PLAY SECTION ---- */
+.play-section { padding: 3rem 2.5rem 5rem; background: var(--bg); }
+.play-stage { max-width: 1000px; margin: 0 auto; }
+.game-frame {
+  position: relative; width: 100%; aspect-ratio: 16 / 10;
+  background: var(--bg-dark);
+  border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: 0 22px 56px rgba(43,33,56,0.2);
+  border: 1px solid var(--ink-faint);
+}
+.game-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.game-frame:fullscreen { aspect-ratio: auto; border-radius: 0; }
+.play-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap; margin-top: 1.3rem;
+}
+.play-hint { font-family: 'Fredoka', sans-serif; font-size: 0.92rem; color: var(--ink-light); margin: 0; }
+.play-bar .btn-outline { cursor: pointer; }
+.play-note { text-align: center; margin: 1.8rem auto 0; color: var(--ink-mid); font-size: 0.95rem; }
+.play-note a { color: var(--orange); font-weight: 700; }
+.play-note a:hover { color: var(--orange-dark); }
+
 /* ---- ANIMATIONS ---- */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -315,6 +337,7 @@ a:hover { color: var(--orange-dark); }
   .download-buttons { flex-direction: column; align-items: center; }
   .tutorial-card { flex-direction: column; gap: 0.8rem; }
   .content-section { padding: 3rem 1.4rem; }
+  .play-section { padding: 2rem 1.4rem 3.5rem; }
   .page-hero { padding: 7rem 1.4rem 2.5rem; }
   .donate-banner { padding: 1.9rem 1.4rem; }
 }
