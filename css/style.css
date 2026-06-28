@@ -286,7 +286,7 @@ a:hover { color: var(--orange-dark); }
 .play-section { padding: 3rem 2.5rem 5rem; background: var(--bg); }
 .play-stage { max-width: 1000px; margin: 0 auto; }
 .game-frame {
-  position: relative; width: 100%; aspect-ratio: 16 / 10;
+  position: relative; width: 100%; aspect-ratio: 4 / 3;
   background: var(--bg-dark);
   border-radius: var(--radius-lg); overflow: hidden;
   box-shadow: 0 22px 56px rgba(43,33,56,0.2);
